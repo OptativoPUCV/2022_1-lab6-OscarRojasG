@@ -51,13 +51,21 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
   List* list=createList();
+  int flag = 0;
     
   int i, j, k;
   for(i = 0; i < 9; i++)
+  {
     for(j = 0; j < 9; j++)
-      if(n->sudo[i][j] == 0) break;
-
-  printf("%d\n%d\n", i, j);
+    {
+      if(n->sudo[i][j] == 0)
+      {
+        flag = 1;
+        break;
+      }
+    }
+    if(flag == 1) break;
+  }
 
   for(k = 1; k <= 9; k++)
   {
