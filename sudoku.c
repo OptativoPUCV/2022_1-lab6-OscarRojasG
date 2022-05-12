@@ -71,7 +71,7 @@ List* get_adj_nodes(Node* n){
   {
     Node *adj = copy(n);
     adj->sudo[i][j] = k;
-    pushFront(list, adj);
+    pushBack(list, adj);
   }
 
   return list;
