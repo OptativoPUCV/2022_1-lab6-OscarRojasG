@@ -67,6 +67,8 @@ List* get_adj_nodes(Node* n){
     if(flag == 1) break;
   }
 
+  if(flag == 0) return list;
+
   for(k = 1; k <= 9; k++)
   {
     Node *adj = copy(n);
