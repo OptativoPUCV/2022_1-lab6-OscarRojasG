@@ -61,9 +61,9 @@ int is_valid(Node* n){
       if(row[row_value] == 1 || col[col_value] == 1 || sub[sub_value] == 1)
         return 0;
 
-      row[row_value] = 1;
-      col[col_value] = 1;
-      sub[sub_value] = 1;
+      if(row_value != 0) row[row_value] = 1;
+      if(col_value != 0) col[col_value] = 1;
+      if(sub_value != 0) sub[sub_value] = 1;
     }
   }
 
