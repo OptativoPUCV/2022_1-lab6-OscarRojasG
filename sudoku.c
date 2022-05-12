@@ -93,7 +93,7 @@ List* get_adj_nodes(Node* n){
   {
     Node *adj = copy(n);
     adj->sudo[i][j] = k;
-    
+
     if(is_valid(adj))
       pushBack(list, adj);
   }
@@ -103,7 +103,11 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-    return 0;
+  for(int i = 0; i < 9; i++)
+    for(int j = 0; j < 9; j++)
+      if(n->sudo[i][j] == 0) return 0;
+
+  return 1;
 }
 
 Node* DFS(Node* initial, int* cont){
