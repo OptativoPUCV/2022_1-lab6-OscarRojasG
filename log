@@ -21,3 +21,9 @@ sudoku.c:60:3: error: implicit declaration of function 'print' [-Werror=implicit
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a3bf9f3
+ju., 12 de may. de 2022 14:02:39: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+3f0eea6
