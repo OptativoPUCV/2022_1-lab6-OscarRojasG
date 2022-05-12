@@ -56,6 +56,8 @@ int is_valid(Node* n){
       int col_value = n->sudo[j][i];
       int sub_value = n->sudo[3*(i/3)+(j/3)][3*(i%3)+(j%3)];
 
+      printf("%d\n%d\n%d\n\n", row_value, col_value, sub_value);
+
       if(row[row_value] == 1 || col[col_value] == 1 || sub[sub_value] == 1)
         return 0;
 
