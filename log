@@ -10,3 +10,14 @@ ju., 12 de may. de 2022 13:59:39:
  tests:  0|5
 total_score: 0/70
 9d28a2b
+ju., 12 de may. de 2022 14:02:31: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:60:3: error: implicit declaration of function 'print' [-Werror=implicit-function-declaration]
+   print("%d\n%d\n", i, j);
+   ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a3bf9f3
