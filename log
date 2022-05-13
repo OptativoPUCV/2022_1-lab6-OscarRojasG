@@ -81,3 +81,17 @@ ju., 12 de may. de 2022 15:23:43:
  tests:  7|1
 total_score: 55/70
 34e8707
+vi., 13 de may. de 2022 11:42:42: 
+ sudoku.c | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:114:18: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   Stack *stack = createStack;
+                  ^~~~~~~~~~~
+sudoku.c:132:5: error: value computed is not used [-Werror=unused-value]
+     *cont++;
+     ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4e37c78
