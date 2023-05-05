@@ -45,7 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n) {
     for(int i = 0; i < 9; i++) {
-        int A[10];
+        int A[10] = {0};
         for(int j = 0; j < 9; j++) {
             if (A[n->sudo[i][j]] == 1) {
                 return 0;
@@ -55,7 +55,7 @@ int is_valid(Node* n) {
     }
 
     for(int i = 0; i < 9; i++) {
-        int A[10];
+        int A[10] = {0};
         for(int j = 0; j < 9; j++) {
             if (A[n->sudo[j][i]] == 1) {
                 return 0;
