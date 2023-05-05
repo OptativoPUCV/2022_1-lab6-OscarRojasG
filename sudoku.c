@@ -125,7 +125,7 @@ Node* DFS(Node* initial, int* cont) {
 
         List *adj = get_adj_nodes(node);
         for(Node *n = first(adj); n != NULL; n = next(adj)) {
-            push(stack, adj);
+            push(stack, n);
         }
 
         free(node);

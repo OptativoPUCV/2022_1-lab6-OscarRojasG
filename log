@@ -110,3 +110,9 @@ vie.,  5 de may. de 2023 13:02:03:
  1 file changed, 1 insertion(+)
  tests:  0|0
 07095a7
+vie.,  5 de may. de 2023 13:03:57: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|0
+total_score: 70/70
+beb8a10
